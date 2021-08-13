@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+
+    <!-- font-awesome site cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="static/favicon.ico">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="img-container">
+            <img src="static/music-1.jpg" alt="img-1">
+        </div>
+        <h2 id="title">Let the breeze</h2>
+        <h3 id="artist">Kerin Till</h3>
+        <audio src="music/music-1.mp3"></audio>
+        
+        <!-- progress -->
+        <div id="progress-container" class="progress-container">
+            <div class="progress" id="progress"></div>
+                <div class="duration-wrapper">
+                    <span id="current-time">
+                        0:00
+                    </span>
+                    <span id="duration">
+                        2:06
+                    </span>
+                </div>
+        </div>
+        <!-- controls -->
+        <div class="player-controls">
+            <i class="fas fa-backward" id="prev" title="Previous"></i>
+            <i class="fas fa-play main-btn" id="play" title="Play"></i>
+            <i class="fas fa-forward" id="next" title="Next"></i>
+
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+</html>
